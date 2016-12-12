@@ -1,0 +1,5 @@
+rogerdudler.github.io/git-guide/index.pt_BR.html
+http://aprenda.vidageek.net/aprenda/git
+https://git-scm.com/book/pt-br/v1/Primeiros-passos-Noções-Básicas-de-Git
+
+

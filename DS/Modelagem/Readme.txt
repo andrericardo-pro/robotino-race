@@ -1,6 +1,6 @@
 Todos os diagramas UML gerados no projeto serão adicionados nesta pasta.
 
-Feramenta adotada para modelagem:
+Ferramenta adotada para modelagem:
 
 Astah Community
 

@@ -1,6 +1,6 @@
 # robotino-race
 
-Projeto de corrida com Robotino para disciplina de Tópicos em Engenharia de Software do PPGEE da UFAM.
+Projeto de corrida com obstáculos usando Robotino da Festo Didactic para a disciplina de Tópicos em Engenharia de Software do PPGEE da UFAM.
 
 Participantes do projeto:  
   

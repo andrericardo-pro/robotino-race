@@ -45,10 +45,13 @@
       <md:dynamicInputs/>
       <md:dynamicOutputs/>
       <md:configVarExprs>
-        <md:varExpr md:value="127.0.0.1:8080" md:varname="ipAddress"/>
-        <md:varExpr md:value="127.0.0.1:8080;;192.168.10.102;;172.26.1.1" md:varname="ipAddressHistory"/>
+        <md:varExpr md:value="127.0.0.1" md:varname="ipAddress"/>
+        <md:varExpr md:value="127.0.0.1;;172.26.101.103;;127.0.0.1:8080;;192.168.10.102;;172.26.1.1" md:varname="ipAddressHistory"/>
         <md:varExpr md:value="0" md:varname="imageServerPort"/>
-        <md:varExpr md:value="(320 240)" md:varname="camera_resolution"/>
+        <md:varExpr md:value="(320 240)" md:varname="camera0_resolution"/>
+        <md:varExpr md:value="(320 240)" md:varname="camera1_resolution"/>
+        <md:varExpr md:value="(320 240)" md:varname="camera2_resolution"/>
+        <md:varExpr md:value="(320 240)" md:varname="camera3_resolution"/>
         <md:varExpr md:value="false" md:varname="disableDriveSystem"/>
         <md:varExpr md:value="9" md:varname="num_axes"/>
         <md:varExpr md:value="30" md:varname="num_pos_max"/>
@@ -116,6 +119,7 @@
         <md:varExpr md:value="true" md:varname="line0_enabled"/>
         <md:varExpr md:value="true" md:varname="line1_enabled"/>
         <md:varExpr md:value="true" md:varname="line2_enabled"/>
+        <md:varExpr md:value="()" md:varname="drivelayout"/>
       </md:configVarExprs>
       <md:dynamicUnits/>
     </md:instance>
@@ -178,7 +182,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__1_" md:name="Constante (1)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="1290.000000" md:varname="value">
+            <md:varExpr md:value="0.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -192,7 +196,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__2_" md:name="Constante (2)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="1300.000000" md:varname="value">
+            <md:varExpr md:value="0.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -206,7 +210,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__3_" md:name="Constante (3)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="98.000000" md:varname="value">
+            <md:varExpr md:value="0.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -442,34 +446,6 @@
               <md:varProperty md:name="visible" md:value="true"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
-            <md:varExpr md:value="100" md:varname="accel">
-              <md:varProperty md:name="visible" md:value="true"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="100" md:varname="decel">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="kp">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="ki">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="kd">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="false" md:varname="resetOnStart">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="true" md:varname="useControllerDefaults">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
           </md:inVarExprs>
           <md:outVarExprs>
             <md:varExpr md:varname="actualvel">
@@ -503,34 +479,6 @@
             </md:varExpr>
             <md:varExpr md:value="false" md:varname="brake">
               <md:varProperty md:name="visible" md:value="true"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="100" md:varname="accel">
-              <md:varProperty md:name="visible" md:value="true"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="100" md:varname="decel">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="kp">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="ki">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="kd">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="false" md:varname="resetOnStart">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="true" md:varname="useControllerDefaults">
-              <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
           </md:inVarExprs>
@@ -568,34 +516,6 @@
               <md:varProperty md:name="visible" md:value="true"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
-            <md:varExpr md:value="100" md:varname="accel">
-              <md:varProperty md:name="visible" md:value="true"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="100" md:varname="decel">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="kp">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="ki">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="25" md:varname="kd">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="false" md:varname="resetOnStart">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
-            <md:varExpr md:value="true" md:varname="useControllerDefaults">
-              <md:varProperty md:name="visible" md:value="false"/>
-              <md:varProperty md:name="debug" md:value="true"/>
-            </md:varExpr>
           </md:inVarExprs>
           <md:outVarExprs>
             <md:varExpr md:varname="actualvel">
@@ -624,6 +544,18 @@
             </md:varExpr>
             <md:varExpr md:value="0.000000" md:varname="omega">
               <md:varProperty md:name="visible" md:value="true"/>
+              <md:varProperty md:name="debug" md:value="true"/>
+            </md:varExpr>
+            <md:varExpr md:value="0.187000" md:varname="rb">
+              <md:varProperty md:name="visible" md:value="false"/>
+              <md:varProperty md:name="debug" md:value="true"/>
+            </md:varExpr>
+            <md:varExpr md:value="0.062000" md:varname="rw">
+              <md:varProperty md:name="visible" md:value="false"/>
+              <md:varProperty md:name="debug" md:value="true"/>
+            </md:varExpr>
+            <md:varExpr md:value="32.000000" md:varname="gear">
+              <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
           </md:inVarExprs>
@@ -962,7 +894,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__1_11" md:name="Constante (1)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="1170.000000" md:varname="value">
+            <md:varExpr md:value="2100.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -976,7 +908,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__2_12" md:name="Constante (2)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="531.000000" md:varname="value">
+            <md:varExpr md:value="600.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -1039,10 +971,10 @@
           <md:timeslice md:nsec="10000000" md:sec="0"/>
         </md:sfcSimple>
         <md:sfcTransition md:guard="true" md:id="sfcitem_transition4"/>
-        <md:sfcSimple md:id="sfcitem_simple_posicionador2" md:name="POSICIONADOR2" md:sdfModel="sdfmodel_posicionador">
+        <md:sfcSimple md:id="sfcitem_simple_step4" md:name="Step4" md:sdfModel="sdfmodel_posicionador">
           <md:timeslice md:nsec="10000000" md:sec="0"/>
         </md:sfcSimple>
-        <md:sfcTransition md:guard="Reached" md:id="sfcitem_transition5"/>
+        <md:sfcTransition md:guard="false" md:id="sfcitem_transition5"/>
         <md:sfcJump md:dest="sfcitem_simple_init" md:id="sfcitem_jump"/>
       </md:sfcSequence>
     </md:sfc>
@@ -1051,7 +983,7 @@
   <md:layout>
     <md:sdfs>
       <md:sdf md:sdfmodel="sdfmodel_passo2" md:showData="false" md:showToolTips="false" md:tab="4">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000003fa0000025a00000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posx" md:width="-1" md:x="498" md:y="-120"/>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posy" md:width="-1" md:x="498" md:y="-60"/>
@@ -1074,7 +1006,7 @@
         <md:texts/>
       </md:sdf>
       <md:sdf md:sdfmodel="sdfmodel_odo" md:showData="false" md:showToolTips="false" md:tab="2">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000003fa0000025a00000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_odometr__a" md:width="-1" md:x="300" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_constante__1_2" md:width="-1" md:x="78" md:y="6"/>
@@ -1086,8 +1018,8 @@
         </md:nets>
         <md:texts/>
       </md:sdf>
-      <md:sdf md:active="true" md:sdfmodel="sdfmodel_posicionador" md:showData="false" md:showToolTips="true" md:tab="1">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000003fa0000025a00000004000000040000000800000008fc00000000"/>
+      <md:sdf md:sdfmodel="sdfmodel_posicionador" md:showData="true" md:showToolTips="false" md:tab="1">
+        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_controlador_de_posici__n__1_" md:width="-1" md:x="348" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_odometr__a3" md:width="-1" md:x="120" md:y="48">
@@ -1168,7 +1100,7 @@
         <md:texts/>
       </md:sdf>
       <md:sdf md:sdfmodel="sdfmodel_passo1" md:showData="false" md:showToolTips="false" md:tab="3">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000003fa0000025a00000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posg8" md:width="-1" md:x="456" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posy9" md:width="-1" md:x="456" md:y="-72"/>
@@ -1192,7 +1124,7 @@
       </md:sdf>
     </md:sdfs>
     <md:sfcs>
-      <md:sfc md:sfcmodel="sfcmodel_1"/>
+      <md:sfc md:active="true" md:sfcmodel="sfcmodel_1"/>
     </md:sfcs>
   </md:layout>
 

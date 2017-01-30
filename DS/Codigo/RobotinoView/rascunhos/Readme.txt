@@ -1,0 +1,1 @@
+Este programas são rascunhos de códigos. A maioria tem rotinas (subprogramas) funcionais, mas a máquina de estados não está funcional.

@@ -983,7 +983,7 @@
   <md:layout>
     <md:sdfs>
       <md:sdf md:sdfmodel="sdfmodel_passo2" md:showData="false" md:showToolTips="false" md:tab="4">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd000000000000054c0000027d00000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posx" md:width="-1" md:x="498" md:y="-120"/>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posy" md:width="-1" md:x="498" md:y="-60"/>
@@ -1006,7 +1006,7 @@
         <md:texts/>
       </md:sdf>
       <md:sdf md:sdfmodel="sdfmodel_odo" md:showData="false" md:showToolTips="false" md:tab="2">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd0000000000000280000001e000000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_odometr__a" md:width="-1" md:x="300" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_constante__1_2" md:width="-1" md:x="78" md:y="6"/>
@@ -1019,7 +1019,7 @@
         <md:texts/>
       </md:sdf>
       <md:sdf md:sdfmodel="sdfmodel_posicionador" md:showData="true" md:showToolTips="false" md:tab="1">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd000000000000054c0000027d00000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_controlador_de_posici__n__1_" md:width="-1" md:x="348" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_odometr__a3" md:width="-1" md:x="120" md:y="48">
@@ -1099,8 +1099,8 @@
         </md:nets>
         <md:texts/>
       </md:sdf>
-      <md:sdf md:sdfmodel="sdfmodel_passo1" md:showData="false" md:showToolTips="false" md:tab="3">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
+      <md:sdf md:active="true" md:sdfmodel="sdfmodel_passo1" md:showData="false" md:showToolTips="false" md:tab="3">
+        <md:sdfViewLayout md:data="000000ff00000000fd000000000000054c0000027d00000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posg8" md:width="-1" md:x="456" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posy9" md:width="-1" md:x="456" md:y="-72"/>
@@ -1124,7 +1124,7 @@
       </md:sdf>
     </md:sdfs>
     <md:sfcs>
-      <md:sfc md:active="true" md:sfcmodel="sfcmodel_1"/>
+      <md:sfc md:sfcmodel="sfcmodel_1"/>
     </md:sfcs>
   </md:layout>
 

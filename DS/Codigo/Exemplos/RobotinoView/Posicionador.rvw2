@@ -182,7 +182,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__1_" md:name="Constante (1)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="0.000000" md:varname="value">
+            <md:varExpr md:value="2000.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -196,7 +196,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__2_" md:name="Constante (2)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="0.000000" md:varname="value">
+            <md:varExpr md:value="3000.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -894,7 +894,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__1_11" md:name="Constante (1)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="0.000000" md:varname="value">
+            <md:varExpr md:value="1500.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -908,7 +908,7 @@
         </md:unit>
         <md:unit md:deviceInstanceName="Generic" md:id="actor_constante__2_12" md:name="Constante (2)" md:type="REC GmbH Constant" md:utspec="rec_gmbh_constant_float" md:variantName="REC GmbH Constant">
           <md:inVarExprs>
-            <md:varExpr md:value="-500.000000" md:varname="value">
+            <md:varExpr md:value="800.000000" md:varname="value">
               <md:varProperty md:name="visible" md:value="false"/>
               <md:varProperty md:name="debug" md:value="true"/>
             </md:varExpr>
@@ -970,7 +970,7 @@
         <md:sfcSimple md:id="sfcitem_simple_passo2" md:name="PASSO2" md:sdfModel="sdfmodel_passo2">
           <md:timeslice md:nsec="10000000" md:sec="0"/>
         </md:sfcSimple>
-        <md:sfcTransition md:guard="true" md:id="sfcitem_transition4"/>
+        <md:sfcTransition md:guard="false" md:id="sfcitem_transition4"/>
         <md:sfcSimple md:id="sfcitem_simple_step4" md:name="Step4" md:sdfModel="sdfmodel_posicionador">
           <md:timeslice md:nsec="10000000" md:sec="0"/>
         </md:sfcSimple>
@@ -983,7 +983,7 @@
   <md:layout>
     <md:sdfs>
       <md:sdf md:sdfmodel="sdfmodel_passo2" md:showData="false" md:showToolTips="false" md:tab="4">
-        <md:sdfViewLayout md:data="000000ff00000000fd0000000000000280000001e000000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd000000000000054c0000025000000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posx" md:width="-1" md:x="498" md:y="-120"/>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posy" md:width="-1" md:x="498" md:y="-60"/>
@@ -1006,7 +1006,7 @@
         <md:texts/>
       </md:sdf>
       <md:sdf md:sdfmodel="sdfmodel_odo" md:showData="false" md:showToolTips="false" md:tab="2">
-        <md:sdfViewLayout md:data="000000ff00000000fd0000000000000280000001e000000004000000040000000800000008fc00000000"/>
+        <md:sdfViewLayout md:data="000000ff00000000fd000000000000054c0000025000000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_odometr__a" md:width="-1" md:x="300" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_constante__1_2" md:width="-1" md:x="78" md:y="6"/>
@@ -1018,8 +1018,8 @@
         </md:nets>
         <md:texts/>
       </md:sdf>
-      <md:sdf md:sdfmodel="sdfmodel_posicionador" md:showData="true" md:showToolTips="false" md:tab="1">
-        <md:sdfViewLayout md:data="000000ff00000000fd0000000000000280000001e000000004000000040000000800000008fc00000000"/>
+      <md:sdf md:active="true" md:sdfmodel="sdfmodel_posicionador" md:showData="true" md:showToolTips="false" md:tab="1">
+        <md:sdfViewLayout md:data="000000ff00000000fd000000000000054c0000025000000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_controlador_de_posici__n__1_" md:width="-1" md:x="348" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="hidden" md:unit="actor_odometr__a3" md:width="-1" md:x="120" md:y="48">
@@ -1099,8 +1099,8 @@
         </md:nets>
         <md:texts/>
       </md:sdf>
-      <md:sdf md:active="true" md:sdfmodel="sdfmodel_passo1" md:showData="false" md:showToolTips="false" md:tab="3">
-        <md:sdfViewLayout md:data="000000ff00000000fd00000000000005500000025900000004000000040000000800000008fc00000000"/>
+      <md:sdf md:sdfmodel="sdfmodel_passo1" md:showData="false" md:showToolTips="false" md:tab="3">
+        <md:sdfViewLayout md:data="000000ff00000000fd000000000000054c0000025000000004000000040000000800000008fc00000000"/>
         <md:units>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posg8" md:width="-1" md:x="456" md:y="-12"/>
           <md:unit md:height="-1" md:nameDisplay="visible" md:unit="actor_posy9" md:width="-1" md:x="456" md:y="-72"/>

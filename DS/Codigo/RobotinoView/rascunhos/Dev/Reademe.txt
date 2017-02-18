@@ -1,0 +1,14 @@
+Procedimento antes de iniciar corrida:
+
+- Conectar-se ao IP do Robotino na rede WiFi dele;
+- Abrir rotina "odo_reset";
+- Deixar input Set false;
+- Executar rotina;
+- Verificar saídas X,Y não-zeradas;
+- Alterar input Set true;
+- Verificar saídas X,Y zerados;
+- Alterar input Set false;
+- Salvar;
+- Parar execução;
+- Voltar para "Main program";
+- Executar "Main program".
